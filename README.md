@@ -1,3 +1,5 @@
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/3eaf409c8bb641b591a1bfc1808ff013)](https://app.codacy.com/gh/rinatcormier/topjava/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
+
 Java Enterprise Online Project
 ===============================
 
