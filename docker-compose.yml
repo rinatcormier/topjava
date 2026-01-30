@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgres:13
+    volumes:
+      - ./src/main/resources/db/initDB.sql:/docker-entrypoint-initdb.d/initDB.sql
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: topjava
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
