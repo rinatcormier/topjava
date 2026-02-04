@@ -8,7 +8,20 @@
 <hr>
 <ul style="font-size: large">
     <li><a href="users">Users</a></li>
-    <li><a href="meals">Meals</a></li>
+    <li>
+        <form method="get" action="meals">
+            <p>
+                <label for="selectUser">Select user:</label>
+                <select name="authUserId" id="selectUser">
+                    <option value="1">Admin</option>
+                    <option value="2">User</option>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Go">
+            </p>
+        </form>
+    </li>
 </ul>
 </body>
 </html>

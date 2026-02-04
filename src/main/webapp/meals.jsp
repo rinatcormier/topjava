@@ -21,7 +21,31 @@
     <h3><a href="index.html">Home</a></h3>
     <hr/>
     <h2>Meals</h2>
-    <a href="meals?action=create">Add Meal</a>
+    <div>
+        <form method="get" action="meals">
+            <p>
+                <label for="startDate">От даты</label>
+                <input type="date" name="startDate" id="startDate" value="${param.startDate}">
+            </p>
+            <p>
+                <label for="endDate">До даты</label>
+                <input type="date" name="endDate" id="endDate" value="${param.endDate}">
+            </p>
+            <p>
+                <label for="startTime">От времени</label>
+                <input type="time" name="startTime" id="startTime" value="${param.startTime}">
+            </p>
+            <p>
+                <label for="endTime">До времени</label>
+                <input type="time" name="endTime" id="endTime" value="${param.endTime}">
+            </p>
+            <p>
+                <input type="hidden" name="action" value="all">
+                <input type="submit" value="Отфильтровать">
+            </p>
+        </form>
+    </div>
+    <a href="meals?action=create&authUserId=${param.authUserId}">Add Meal</a>
     <br><br>
     <table border="1" cellpadding="8" cellspacing="0">
         <thead>
@@ -44,8 +68,8 @@
                 </td>
                 <td>${meal.description}</td>
                 <td>${meal.calories}</td>
-                <td><a href="meals?action=update&id=${meal.id}">Update</a></td>
-                <td><a href="meals?action=delete&id=${meal.id}">Delete</a></td>
+                <td><a href="meals?action=update&id=${meal.id}&authUserId=${param.authUserId}">Update</a></td>
+                <td><a href="meals?action=delete&id=${meal.id}&authUserId=${param.authUserId}">Delete</a></td>
             </tr>
         </c:forEach>
     </table>
