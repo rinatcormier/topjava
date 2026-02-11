@@ -1,4 +1,6 @@
-[Java Enterprise Online Project](https://javaops.ru/view/topjava)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/2a632ab10176472f94ac3f0be82ab42c)](https://app.codacy.com/gh/rinatcormier/topjava/dashboard)
+
+Java Enterprise Online Project
 ===============================
 Разработка полнофункционального Spring/JPA Enterprise приложения c авторизацией и правами доступа на основе ролей с использованием наиболее популярных инструментов и технологий Java: Maven, Spring MVC, Security, JPA(Hibernate), REST(Jackson), Bootstrap (css,js), DataTables, jQuery + plugins, Java 8 Stream and Time API и хранением в базах данных Postgresql и HSQLDB.
 
